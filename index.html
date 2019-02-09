@@ -1,0 +1,274 @@
+<!doctype html>
+<!--[if lt IE 9]>  <html class="ie lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Your Title</title>
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <!-- get calcite-web css from the cdn (use latest version) -->
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.4/css/calcite-web.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+
+  <!--[if lt IE 9]>
+      <script src="/assets/javascripts/libs/selectivizr.js"></script>
+      <script src="/assets/javascripts/libs/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <header class="top-nav">
+    <div class="grid-container">
+      <div class="column-24">
+        <a id="topnav" href="#" class="top-nav-title">LABINS</a>
+        <nav class="top-nav-list" role="navigation" aria-labelledby="topnav">
+          <a class="top-nav-link" href="#">Features</a>
+          <a class="top-nav-link" href="#">Data</a>
+          <a class="top-nav-link" href="#">User Guide</a>
+          <a class="top-nav-link" href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <div class="panel trailer-2" style="background-color: #0D3B4B; color:white">
+    <div class="grid-container">
+      <div class="column-24 modifier-class font-size-5" style="font-family: 'Lato'">
+        <!-- title needs to go in here, but be white and centered -->
+        <h1 class="font-size-8">LABINS</h1>
+        <h3 class="font-size-2">Land Area Boundary Information System</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- main-content -->
+  <div class="grid-container">
+
+    <!-- side navigation -->
+    <!-- <div class="column-4">
+      <aside class="side-nav">
+        <h2 id="sidenav" class="side-nav-title">Sidenav Group</h2>
+        <nav role="navigation" aria-labelledby="sidenav">
+          <a href="#" class="side-nav-link">Side Nav Link 1</a>
+          <a href="#" class="side-nav-link">Side Nav Link 2</a>
+          <a href="#" class="side-nav-link">Side Nav Link 3</a>
+          <a href="#" class="side-nav-link">Side Nav Link 4</a>
+        </nav>
+      </aside>
+    </div> -->
+
+    <!-- main content list -->
+
+    <!-- Use this if wanting to have a direct link to a script-->
+    <!-- <div id="viewDiv" class="column-19 pre-1 trailer-1" style="width: 100%; height: 550px;"></div> -->
+
+
+    <!-- Use this if wanting to embed map from external source-->
+    <div class="column-24 pre-0 trailer-1"><iframe data-sample-code-type="3d" class="iframe-sample-code js-container-iframe-sample-code js-container-sample-code-3d"
+        onload='calcite.bus.emit("iframe:sample-code:load-handler")' title="Live Sample" allowfullscreen src="https://freac.github.io/LABINS/"
+        style="width: 100%; height:640px ;"></iframe>
+    </div>
+
+  </div>
+
+  <div class="grid-container">
+    <div class="column-24 trailer-1">
+      <h2 class="font-size--8 trailer-1" style="text-align: right;"><a href="https://freac.github.io/LABINS/" target="_blank">View
+          fullscreen here</a>
+      </h2>
+      <p></p>
+      <h2>LABINS (Land Area Boundary Information System) WebMap</h2>
+      <p>The Land Boundary Information System or LABINS was developed by the Florida Department of Environmental
+        Protection to provide information regarding to surveying and mapping for horizontal and vertical control
+        information across the State of Florida.
+      </p>
+      <p>
+        The Florida Department of Environmental Protection, Division of State Lands, Bureau of Survey and Mapping,
+        has
+        contracted with the Florida Resources and Environmental Analysis Center at the Florida State University, to
+        collect the attendant data from Federal, State, and local agencies for use by the private sector.
+      </p>
+
+      <p>
+
+        This WebMap is created as an update to the previous version to utilize the JavaScript API for ArcGIS.
+      </p>
+
+      <h2>More Text</h2>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra
+        augue.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Maecenas faucibus mollis
+        interdum.</p>
+    </div>
+  </div>
+
+  <div class="grid-container trailer-2" style="font-family: 'Lato';">
+    <footer class="footer leader-3">
+      <div class="container">
+        <nav class="column-6">
+          <h6 class="font-size-5 pre-1 leader-1"><strong>DEP</strong></h6>
+          <img class="column-4 trailer-1" src="https://floridadep.gov/sites/default/files/new_logo_0.png"><br>
+
+          </ul>
+          <!-- <p class="leader-1 font-size--2"><strong>Follow Us</strong></span></p>
+          <section class="footer-social-nav">
+            <a class="icon-social-twitter" href="https://twitter.com/Esri/"></a>
+            <a class="icon-social-facebook" href="https://www.facebook.com/esrigis/"></a>
+            <a class="icon-social-youtube" href="https://www.youtube.com/esrigis/"></a>
+            <a class="icon-social-github" href="http://esri.github.com/"></a>
+            <a class="icon-social-linkedin" href="https://www.linkedin.com/company/5311"></a>
+            <a class="icon-social-contact" href="http://www.esri.com/about-esri/contact/"></a>
+          </section> -->
+        </nav>
+
+        <nav class="column-9 leader-1 text-center">
+          <h6 class="font-size--2"><strong>LABINS</strong></h6>
+          <ul class="list-plain font-size--4">
+            <li><a class="link-off-black" href="#">About Labins</a></li>
+            <li><a class="link-off-black" href="#">My Florida</a></li>
+            <li><a class="link-off-black" href="#">Florida DEP</a></li>
+            <li><a class="link-off-black" href="#">Division of State Lands</a></li>
+            <li><a class="link-off-black" href="#">Bureau of Survey and Mapping</a></li>
+            <li><a class="link-off-black" href="#"></a></li>
+          </ul>
+        </nav>
+        <nav class="column-9 leader-1 text-center">
+          <h6 class="font-size--2"><strong>Contact</strong></h6>
+          <ul class="list-plain font-size--4">
+            <li>For data questions, contact <br> <a href="mailto:lamar.evers@dep.state.fl.us">Lamar Evers</a>
+              <br>850.245.2606 </li>
+            <li><br></li>
+            <li>For data questions, contact <br> <a href="gstrode@fsu.edu">Technical Support</a>
+              <br>850.644.2305</li><br>
+            <li><a href="https://www.labins.org/general/contact.cfm">More Contact Information</a></li>
+          </ul>
+        </nav>
+        <!-- <nav class="column-6 leader-1">
+          <h6 class="font-size--2"><strong>Understanding GIS</strong></h6>
+          <ul class="list-plain font-size--2">
+            <li><a class="link-off-black" href="#">What is GIS</a></li>
+            <li><a class="link-off-black" href="#">Training</a></li>
+            <li><a class="link-off-black" href="#">Events</a></li>
+            <li><a class="link-off-black" href="#">Insights</a></li>
+            <li><a class="link-off-black" href="#">Esri Press</a></li>
+          </ul>
+        </nav> -->
+        <!-- <div class="column-24">
+          <hr>
+          <div class="column-8">
+            <p>United States (English) <span class="icon-ui-globe"></span></p>
+          </div>
+          <div class="column-16 font-size--2">
+            <a class="link-off-black margin-right-4" href="#">Privacy</a>
+            <a class="link-off-black margin-right-4" href="#">Legal</a>
+            <a class="link-off-black margin-right-4" href="#">Site Map</a>
+            <a class="link-off-black margin-right-4" href="#">Terms and Conditions</a>
+          </div>
+        </div> -->
+      </div>
+    </footer>
+  </div>
+
+  <!-- <div class="footer" role="contentinfo">
+    <div class="grid-container">
+     
+      <div class="column-5 pre-2">
+        <h2 class="font-size--2 avenir-bold">Header 1</h2>
+        <ul class="list-plain font-size--2">
+          <li><a class="link-off-black" href="#">Link 1</a></li>
+          <li><a class="link-off-black" href="#">Link 2</a></li>
+          <li><a class="link-off-black" href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+      <div class="column-5 pre-1">
+        <h2 class="font-size--2 avenir-bold">Header 2</h2>
+        <ul class="list-plain font-size--2">
+          <li><a class="link-off-black" href="#">Link 1</a></li>
+          <li><a class="link-off-black" href="#">Link 2</a></li>
+          <li><a class="link-off-black" href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+      <div class="column-5 pre-1">
+        <h2 class="font-size--2 avenir-bold">Header 3</h2>
+        <ul class="list-plain font-size--2">
+          <li><a class="link-off-black" href="#">Link 1</a></li>
+          <li><a class="link-off-black" href="#">Link 2</a></li>
+          <li><a class="link-off-black" href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+      <div class="column-4 pre-1">
+        <h2 class="font-size--2 avenir-bold">Header 4</h2>
+        <ul class="list-plain font-size--2">
+          <li><a class="link-off-black" href="#">Link 1</a></li>
+          <li><a class="link-off-black" href="#">Link 2</a></li>
+          <li><a class="link-off-black" href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div> -->
+
+  <!-- get calcite-web js from the cdn (use latest version) -->
+  <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.4/js/calcite-web.min.js"></script>
+
+  <!-- interactive patterns need to be initialized -->
+  <script>
+    calcite.init()
+
+
+    // var mymap = L.map('viewDiv').setView([51.505, -0.09], 13);
+
+    // L.tileLayer(
+    //   'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    //     maxZoom: 18,
+    //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    //       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    //       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    //     id: 'mapbox.streets'
+    //   }).addTo(mymap);
+
+    // L.marker([51.5, -0.09]).addTo(mymap)
+    //   .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+    // L.circle([51.508, -0.11], 500, {
+    //   color: 'red',
+    //   fillColor: '#f03',
+    //   fillOpacity: 0.5
+    // }).addTo(mymap).bindPopup("I am a circle.");
+
+    // L.polygon([
+    //   [51.509, -0.08],
+    //   [51.503, -0.06],
+    //   [51.51, -0.047]
+    // ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    // var popup = L.popup();
+
+    // function onMapClick(e) {
+    //   popup
+    //     .setLatLng(e.latlng)
+    //     .setContent("You clicked the map at " + e.latlng.toString())
+    //     .openOn(mymap);
+    // }
+
+    // mymap.on('click', onMapClick);
+  </script>
+</body>
+
+</html>
